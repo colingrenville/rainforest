@@ -1,21 +1,23 @@
+
+<div class="formholder">
 <%= form_for @product do |f| %>
-	<div> 
-		<%= f.label :name %>
-		<%= f.text_field :name %>
+	<div class="inputbox"> 
+			<%= f.label :name %><br/>
+			<%= f.text_field :name %>
 	</div>
-	<div>
-		<%= f.label :description %>
-		<%= f.text_field :description %>
+	<div class="inputbox">
+			<%= f.label :description %><br/>
+			<%= f.text_field :description %>
 	</div>
-	<div>
-		<%= f.label :price_in_cents %>
+	<div class="inputbox">
+		<%= f.label :price_in_cents %><br/>
 		<%= f.text_field :price_in_cents %>
-	</div>
-	<div>
+	<div id="submit">
 	<%= f.submit %>
 	</div>
 <%end%>
 
+ </div>
 	<% if @product.errors.any? %>
 		<div id="error_explanation">
 			<h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>

@@ -1,14 +1,37 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<!-- <h1>Products</h1> -->
 
-<%= @product.each do |x| %>
-	<p>
-		<%= x.name %>
-	</p>
-	<p>
-		<%= x.description %>
-	</p>
-	<p>
-		<%= x.price_in_cents %>
-	</p>
+<% @pagetitle = "Products" %>
+
+
+
+
+<% @product.each do |x| %>
+<div class="product">
+
+	<div>
+		<img src="http://placehold.it/100x100">
+	</div>
+
+	<div class="values"
+		<p id="name">
+			<strong>Name:</strong> <%= x.name %>
+		</p>
+
+		<p id="description">
+			<strong>Description:</strong> <%= x.description %>
+		</p>
+
+		<p id="price">
+			<strong> Price: $</strong> <%= x.price_in_cents %>
+		</p>
+
+		<!-- <p id="viewme">
+			<a href="/products/<%= x.id %>">View</a>
+		</p> -->
+		<p>
+			<!-- 		<%= x.id %> -->
+ 		</p>
+	</div>
+</div>
+
 <% end %>

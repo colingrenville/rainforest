@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   def show
-  	@review = Review.find[:id]
+  	@review = Review.find(params[:id])
   end
 
   def create
@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
   	@review.user = current_user
 
   	if @review.save
-  		redirect_to products_path, notce: 'Review created succesfully'
+  		redirect_to products_path, notice: 'Review created succesfully'
   	else
   		render 'products/show'
   	end

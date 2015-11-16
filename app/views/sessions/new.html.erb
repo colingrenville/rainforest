@@ -1,4 +1,5 @@
-<h1>Log in</h1>
+<% @pagetitle = "Log in" %>
+<div class="formholder">
 <%= form_tag sessions_path do %>
 	<div class="field">
 		<%= label_tag :email %><br/>
@@ -10,3 +11,4 @@
 	</div>
 	<div class="actions"><%= submit_tag "Log in" %></div>
 <%end%>
+</div>

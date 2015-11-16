@@ -1,3 +1,124 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.product {
+	
+	margin-left: 5px;
+	margin-top: 30px;
+	width: 200px;
+	height: 170px;
+	float: right;
+	border: transparent;
+	text-align: center;
+	color: black;
+}
+
+
+
+.values {
+	margin-top: 10px;
+	margin-right: -100px;
+	margin-left: -100px;
+	font-family: 'Poiret One', cursive;
+
+}
+
+.formholder {
+	align: center;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 50px;
+	font-family: 'Poiret One', cursive;
+	font-size: 40px;
+}
+
+.productinfo {
+	font-family: 'Poiret One', cursive;	
+	color: black;
+	font-size: 20px;
+	height: 100px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+.showheader {
+	width: 200px;
+	text-align: center;
+	font-family: 'Poiret One', cursive;	
+	color: white;
+	font-size: 30px;	
+	height: 30px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+.productpicture {
+	
+	width: 200px;
+	height: 200px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.infotext {
+	margin-bottom: 5px;
+}
+
+.reviewtitle {
+	width: 350px;
+	text-align: center;
+	font-family: 'Poiret One', cursive;	
+	color: white;
+	font-size: 30px;	
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;	
+}
+
+.pleaselogin {
+	height: 20px;
+	width: 400px;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Poiret One', cursive;	
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#return { 
+	margin-top: 10px;
+	font-size: 30px;
+	color: #000000;
+}
+
+.showheader {
+	color: black;
+}
+
+
+.field {
+	font-family: 'Poiret One', cursive;	
+	color: black;
+	font-size: 20px;
+	height: 100px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+} 

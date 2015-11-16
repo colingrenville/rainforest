@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
   get 'reviews/destroy'
 
- resources :products do
-  resources :reviews, only: [:show, :create, :destroy]
- end
+  get '/signup' => 'users#new'
+  get '/users' => 'users#create'
+  resources :products do
+    resources :reviews, only: [:show, :create, :destroy]
+  end
  resources :users, only: [:new, :create]
  resources :sessions, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.

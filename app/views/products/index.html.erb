@@ -2,36 +2,17 @@
 
 <% @pagetitle = "Products" %>
 
+<%= form_tag products_path, method: :get, authentication: false, id: 'search-form' do %>
+	<%= text_field_tag :search, params[:search] %> 
+	<%= submit_tag "Search" %>
+<% end %>
 
-
-
-<% @product.each do |x| %>
-<div class="product">
-
-	<div>
-		<img src="http://placehold.it/100x100">
-	</div>
-
-	<div class="values"
-		<p id="name">
-			<strong>Name:</strong> <%= x.name %>
-		</p>
-
-		<p id="description">
-			<strong>Description:</strong> <%= x.description %>
-		</p>
-
-		<p id="price">
-			<strong> Price: $</strong> <%= x.price_in_cents %>
-		</p>
-
-		<!-- <p id="viewme">
-			<a href="/products/<%= x.id %>">View</a>
-		</p> -->
-		<p>
-			<!-- 		<%= x.id %> -->
- 		</p>
-	</div>
+<div id="products">
+	<%= render @products %>
 </div>
 
-<% end %>
+
+
+
+
+
